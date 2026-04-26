@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Quiz Firewall 🔥</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- INTRO -->
+    <div id="intro">
+        <h1>🔥 Quiz Firewall</h1>
+        <p>Teste seus conhecimentos sobre segurança de redes!</p>
+        <button onclick="iniciarQuiz()">Iniciar Quiz</button>
+    </div>
+
+    <!-- QUIZ -->
+    <div id="quiz" class="hidden">
+
+        <!-- Barra de progresso -->
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <h2 id="contador"></h2>
+        <h1 id="pergunta"></h1>
+        <div id="respostas"></div>
+    </div>
+
+    <!-- RESULTADO -->
+    <div id="resultado" class="hidden">
+        <h1>🔥 Resultado</h1>
+        <p id="pontuacao"></p>
+        <button onclick="reiniciar()">Refazer Quiz</button>
+    </div>
+
+</div>
+
+<!-- Player oculto -->
+<div id="player" style="display:none;"></div>
+
+<!-- API YouTube -->
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
