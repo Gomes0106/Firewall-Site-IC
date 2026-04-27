@@ -125,3 +125,19 @@ function reiniciar() {
         player.stopVideo();
     }
 }
+function iniciarQuiz() {
+    let card = document.querySelector(".info-firewall");
+
+    // animação de saída
+    card.classList.add("sumir");
+
+    // espera a animação terminar
+    setTimeout(() => {
+        card.style.display = "none";
+
+        document.getElementById("intro").classList.add("hidden");
+        document.getElementById("quiz").classList.remove("hidden");
+
+        mostrarPergunta();
+    }, 500);
+}

@@ -67,3 +67,33 @@ button:hover {
     transition: width 0.4s ease;
     border-color: black;
 }
+
+/* Animação de entrada */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.info-firewall {
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255,255,255,0.3);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(5px);
+
+    animation: aparecer 0.8s ease;
+    transition: all 0.5s ease;
+}
+
+/* Animação de saída */
+.info-firewall.sumir {
+    opacity: 0;
+    transform: translateY(-30px);
+}
